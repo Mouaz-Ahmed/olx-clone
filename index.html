@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OLX</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;300&family=Combo&family=Dancing+Script:wght@500&family=Ms+Madi&family=Qwitcher+Grypen:wght@700&family=Roboto+Mono:ital,wght@0,200;0,400;1,200&family=Roboto:wght@300;400&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="header">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container header_conrainer">
+          <a class="navbar-brand" href="#"><img src="./images/OLX_New_Logo.png" alt="" class="blue_olx_logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><i class=" fa-solid fa-car"></i><span
+                    class="span">MOTORS</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-city"></i><span class="span">PROPERTY</span></a>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- nav-2 -->
+
+      <nav class="navbar navbar-expand-lg  nav_2">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="./images/olx.png" alt="" class="olx_black_logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item searched_li">
+                <i class="fa-solid fa-magnifying-glass fa-magnifying-glass1"></i>
+                <input type="text" class="input" placeholder="Search your locality">
+                <i class="fa-solid fa-angle-down"></i>
+              </li>
+              <li class="nav-item searched_li2">
+                <input type="text" class="input2" placeholder="Find Cars, Mobile Phones, and more...">
+                <i class="fa-solid fa-magnifying-glass fa-magnifying-glass2"></i>
+              </li>
+              <li class="nav-item mt-1">
+                <a class="nav-link" href="#" onclick="login_page()"> <span class="span_login" id="login_span">
+                    Login</span></a>
+                <i class="fa-solid fa-right-from-bracket signout_icon" id="logOut_icon" style="display:none;"
+                  onclick="signOutUser()"></i>
+              </li>
+              <li class="nav-item">
+                <button><a onclick="goToPostAdd()" id="add_btn" class="nav-link" href="#"><i
+                      class="fa-solid fa-plus"></i><span>SELL</span></a></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- nav -3 -->
+
+      <nav class="navbar navbar-expand-lg bg-white nav-3 ">
+        <div class="container">
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle navbar-brand" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              ALL CATEGORIES
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Mobiles</a></li>
+              <li><a class="dropdown-item" href="#">Bikes</a></li>
+              <li><a class="dropdown-item" href="#">Plotes</a></li>
+            </ul>
+          </li> -->
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mobile-Phones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cars</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Motocycles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Houses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TV-Video-audio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tablets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Lands and Plots</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+  <!-- slider -->
+  <div id="carouselExampleIndicators" class="carousel slide container" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/289407295-800x600.jpeg" class="d-block w-100 mt-4" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/289407295-800x600.jpeg" class="d-block w-100 mt-4" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/289407295-800x600.jpeg" class="d-block w-100 mt-4" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container " id="cards-container"> </div>
+  <!-- recommendations portion -->
+
+  <!-- <div class="container mt-5">
+    <h1 class="h1">Fresh recommendations</h1>
+  </div>
+
+  cards portion
+  <div class="container " id="cards-container">
+    <div class="card container mt-3 cards_div">
+      <img src="./images/bike.jpeg" class="card-img-top cards_img" alt="...">
+      <div class="card-body">
+        <p class="card-text">Suzuki Bike (Model 2018) Genuine Condition</p>
+        <h5 class="card-title">Rs 58,999</h5>
+        <button class="detail_buttons">
+          <a href="#" class="btn detail_btn">More Details</a>
+        </button>
+      </div>
+    </div>
+    <div class="card container mt-3 cards_div">
+      <img src="./images/bike.jpeg" class="card-img-top cards_img" alt="...">
+      <div class="card-body">
+        <p class="card-text">Suzuki Bike (Model 2018) Genuine Condition</p>
+        <h5 class="card-title">Rs 58,999</h5>
+        <button class="detail_buttons">
+          <a href="#" class="btn detail_btn">More Details</a>
+        </button>
+
+      </div>
+    </div>
+    <div class="card container mt-3 cards_div">
+      <img src="./images/bike.jpeg" class="card-img-top cards_img" alt="...">
+      <div class="card-body">
+        <p class="card-text">Suzuki Bike (Model 2018) Genuine Condition</p>
+        <h5 class="card-title">Rs 58,999</h5>
+        <button class="detail_buttons">
+          <a href="#" class="btn detail_btn">More Details</a>
+        </button>
+
+      </div>
+    </div>
+    <div class="card container mt-3 cards_div">
+      <img src="./images/bike.jpeg" class="card-img-top cards_img" alt="...">
+      <div class="card-body">
+        <p class="card-text">Suzuki Bike (Model 2018) Genuine Condition</p>
+        <h5 class="card-title">Rs 58,999</h5>
+        <button class="detail_buttons">
+          <a href="#" class="btn detail_btn">More Details</a>
+        </button>
+      </div>
+    </div>
+  </div> -->
+  <div class="load_more_div container">
+    <!-- give class btn to <a> tag for css -->
+    <button id="Load_more_btn"><a href="#" class="btn button"> <span>Load more </span></a></button>
+  </div>
+
+  <!-- 2nd last foooter -->
+  <div class="container-fluid sec_last_footer">
+    <div class="sec_last_footer_img_div">
+      <img src="./images/olx-footer-imgwebp" alt="" class="sec_last_footer_img">
+    </div>
+
+    <div class="sec_last_footer_h1_p_div">
+      <h1 class="sec_last_footer_h1">TRY THE OLX APP</h1>
+      <p class="sec_last_footer_p">Buy, sell and find just about anything using the app on your mobile.</p>
+    </div>
+    <div class="border_left"></div>
+    <div class="sec_last_footer_third_portion">
+      <h2 class="h2">GET YOUR APP TODAY</h2>
+      <div class="sec_last_footer_third_portion_img">
+        <img src="./images/download-from-playstore.png" alt="" class="same_img">
+        <img src="./images/Get-It-On-Google-Play.png" alt="" class="same_img">
+        <img src="./images/huawei-Badge-Black.png" alt="" class="same_img third_img">
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <ul>
+      <li>
+        <h1 class="footer_h1">POPULAR CATEGORIES</h1>
+      </li>
+      <li>Cars</li>
+      <li>Flats for rent</li>
+      <li>Mobile Phones</li>
+      <li>Jobs</li>
+    </ul>
+    <ul>
+      <li>
+        <h1 class="footer_h1">TRENDING SEARCHES</h1>
+      </li>
+      <li>Cars</li>
+      <li>Flats for rent</li>
+      <li>Mobile Phones</li>
+      <li>Jobs</li>
+    </ul>
+    <ul>
+      <li>
+        <h1 class="footer_h1">ABOUT US</h1>
+      </li>
+      <li>Cars</li>
+      <li>Flats for rent</li>
+      <li>Mobile Phones</li>
+      <li>Jobs</li>
+    </ul>
+    <ul>
+      <li>
+        <h1 class="footer_h1">OLX</h1>
+      </li>
+      <li>Cars</li>
+      <li>Flats for rent</li>
+      <li>Mobile Phones</li>
+      <li>Jobs</li>
+    </ul>
+
+    <div class="footer_last_portion">
+      <ul>
+        <li>
+          <h1 class="footer_h1">FOLLOW US</h1>
+        </li>
+        <div class="footer_icons">
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-sharp fa-solid fa-play"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+        </div>
+        <div class="footer_last_portion_img">
+          <img src="./images/download-from-playstore.png" alt="" class="footer_same_img">
+          <img src="./images/Get-It-On-Google-Play.png" alt="" class="footer_same_img">
+          <img src="./images/huawei-Badge-Black.png" alt="" class="footer_same_img footer_third_img">
+        </div>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="last_border">
+    <div class="last_para">
+      <p>Free Classifieds in Pakistan . © 2006-2022 OLX</p>
+    </div>
+  </div>
+  <!-- login page -->
+  <div id="logIn_container" class="container">
+    <div class="sub_container  text-center">
+      <img src="./images/OLX_New_Logo.png" alt="" class="login_olx_img mt-3">
+
+      <h2 class="logIn_h2 mt-1">WELCOME TO OLX</h2>
+
+
+      <h1 class="logIn_h1 mt-3">Login</h1>
+
+      <div class="logIn_inputContainer">
+        <input type="text" class="logIn_inputs" id="loginEmail" placeholder="Enter your email ">
+        <br>
+        <input type="text" class="logIn_inputs mt-2" id="loginPassword" placeholder="Enter your password">
+        <br>
+        <!-- animated button -->
+        <button id="logIn_btn" class="mt-3 button" onclick="signInUser()"><span>Login</span></button>
+        <figure class="fa-solid fa-xmark cross_login"
+          onclick="document.getElementById('logIn_container').style.display = 'none';">
+        </figure>
+        <p class="logIn_p mt-3" onclick="signUp_page()">register yourself(SignUp)</p>
+      </div>
+    </div>
+  </div>
+  <!-- login page end-->
+
+  <!-- singup page -->
+
+  <div id="signUp_container" class="container">
+    <div class="sub_container  text-center">
+      <img src="./images/OLX_New_Logo.png" alt="" class="login_olx_img mt-3">
+
+      <h2 class="logIn_h2 mt-1">WELCOME TO OLX</h2>
+      <h1 class="logIn_h1 mt-3">SignUP</h1>
+      <div class="logIn_inputContainer">
+        <input type="text" class="logIn_inputs" id="userName" placeholder="Enter your Name">
+        <br>
+        <input type="text" class="logIn_inputs mt-2" id="userEmail" placeholder="Enter your email">
+        <br>
+        <input type="text" class="logIn_inputs mt-2" id="userPassword" placeholder="Enter your password">
+        <br>
+        <button id="logIn_btn" class="mt-2 button" onclick="signUpUser()"> <span> SignUp </span></button>
+        <figure class="fa-solid fa-xmark cross_login"
+          onclick="document.getElementById('signUp_container').style.display = 'none';">
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <!-- signUp_page_end -->
+
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <script type="module" src="./app.js"></script>
+  <script type="module" src="./firebase.js"></script>
+  <!-- sweet alert -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>

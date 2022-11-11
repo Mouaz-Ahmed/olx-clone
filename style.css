@@ -1,0 +1,468 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* position: relative; */
+}
+
+.blue_olx_logo {
+    width: 40px;
+}
+
+.olx_black_logo {
+    width: 70px;
+    margin-left: 30px;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+.nav_2 {
+    background-color: rgb(248, 249, 250);
+    margin-left: -50px;
+}
+
+.nav-3 {
+    box-shadow: 0px 3px 10px -10px rgba(0, 0, 0, 1);
+}
+
+.searched_li {
+    background-color: white;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.searched_li2 {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 610px;
+}
+
+.input {
+    background-color: white;
+    padding: 15px 10px;
+    outline: none;
+    border: none;
+    width: 185px;
+}
+
+.input2 {
+    background-color: white;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+    width: 500px;
+}
+
+.span {
+    color: rgb(76, 74, 74);
+    margin-left: 13px;
+    font-size: 12px;
+}
+
+.fa-magnifying-glass1 {
+    margin-left: 10px;
+}
+
+.fa-magnifying-glass2 {
+    padding: 19px;
+    height: 100%;
+    background-color: black;
+    color: white;
+    margin-left: 47px;
+}
+
+.fa-angle-down {
+    margin-right: 10px;
+}
+
+.fa-plus {
+    padding-right: 2px;
+    color: black;
+    font-weight: 700;
+}
+
+.span_login {
+    font-size: 18px;
+    padding: 2px;
+    color: black;
+    border-bottom: 2px solid black;
+}
+.span_login:hover {
+    border: none;
+}
+/* log out icon */
+.signout_icon{
+    position: absolute;
+    top: 30px;
+    right: 210px;
+    font-size: 20px; 
+}
+
+
+#add_btn {
+    border-top: 5px solid cyan;
+    border-right: 5px solid blue;
+    border-bottom: 5px solid rgb(255, 206, 50);
+    border-left: 5px solid red;
+    border-radius: 50px;
+    width: 100px;
+    background-color: white;
+}
+
+#add_btn span {
+    color: black;
+    font-weight: 600;
+}
+
+/* recommendation */
+
+.h1 {
+    font-size: 25px !important;
+    font-weight: 400 !important;
+}
+.cards_div {
+    margin: 0px 10px !important;
+    height: 300px !important;
+    width: 35rem !important;
+}
+
+#cards-container {
+    display: flex;          
+}
+
+.cards_img {
+    margin-top: 20px;
+    width: 100% !important;
+    height: 130px;
+    margin: 0px auto !important;
+
+}
+
+.card-title {
+    margin-top: -10px !important;
+}
+
+.detail_buttons {
+    background-color: white;
+    border: 1px solid rgb(125, 126, 127);
+    border-radius: 4px;
+    width: 200px;
+    transition: 0.4s;
+
+}
+
+.detail_buttons:hover {
+    border-radius: 10px;
+    border: 1px solid black;
+
+}
+
+.load_more_div {
+    display: flex;
+    justify-content: center;
+}
+
+#Load_more_btn {
+    background-color: white;
+    margin-top: 20px;
+    transition: 0.4s;
+}
+
+#Load_more_btn:hover {
+    /* border: 3px solid black; */
+    border-radius: 10px;
+}
+
+#Load_more_btn span {
+    font-weight: 700;
+}
+
+.sec_last_footer {
+    background-color: rgb(248, 249, 250);
+    flex-direction: row !important;
+    display: flex !important;
+}
+
+.sec_last_footer {
+    margin-top: 40px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 47, 52, .2);
+}
+
+
+.sec_last_footer_img {
+    width: 450px;
+    height: 200px;
+}
+
+.sec_last_footer_h1_p_div {  
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.sec_last_footer_h1 {
+    font-size: 25px;
+}
+
+.border_left {
+    border-left: 2px solid rgba(0, 47, 52, .2);
+    height: 130px;
+    margin-top: 35px;
+}
+
+.sec_last_footer_p {
+    font-size: 20px;
+    width: 90%;
+    margin-top: 10px;
+}
+
+.sec_last_footer_third_portion {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.sec_last_footer_third_portion h2 {
+    font-size: 16px;
+    margin: 20px 20px;
+}
+
+.same_img {
+    width: 110px;
+    margin-left: 10px;
+}
+
+/* third img width problem */
+.third_img {
+    width: 120px;
+    height: 39px;
+}
+
+.footer {
+    background-color: rgb(235, 238, 239);
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.footer_h1 {
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+
+.footer ul {
+    margin: 30px;
+}
+
+.footer li {
+    color: gray;
+    list-style: none;
+    font-size: 13px;
+    margin: 2px;
+}
+
+.footer li:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.footer_icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_icons i {
+    padding: 6px 8px;
+    margin: 3px 3px;
+    border: 2px solid gray;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.footer_same_img {
+    width: 90px;
+    margin-top: 20px;
+}
+
+.footer_third_img {
+    width: 100px;
+    height: 33px;
+}
+
+.last_border {
+    background-color: rgb(0, 47, 52);
+    width: 100%;
+    height: 50px;
+}
+
+.last_para p {
+    color: white;
+    font-size: 15px;
+    padding: 13px;
+    position: absolute;
+    right: 20px;
+}
+
+/* for login Page */
+#logIn_container {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: none;
+    z-index: 10;
+}
+
+#signUp_container {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: none;
+    z-index: 10;
+}
+
+.sub_container {
+    position: relative;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    height: 420px;
+    width: 340px;
+    margin: auto;
+
+}
+
+.login_olx_img {
+    width: 70px;
+}
+
+
+.logIn_inputContainer {
+    margin-top: 30px;
+}
+
+.logIn_inputs {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.logIn_h2 {
+    font-size: 20px;
+}
+
+.logIn_h1 {
+    font-size: 35px;
+}
+
+#logIn_btn {
+    color: black;
+    font-size: 17px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: white;
+    /* width: 90px; */
+    padding: 4px;
+}
+
+.cross_login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.logIn_p {
+    color: rgb(26, 32, 185);
+    text-decoration: underline;
+}
+
+.logIn_p:hover {
+    cursor: pointer;
+}
+
+/* buttons animation starts */
+.button {
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* button annnimations end */
+
+/* add adds page */
+/* header */
+.add_post_header{
+    background-color: rgb(247, 248, 248);
+    display: flex;
+    padding: 10px;
+}
+.olx_add_page_img{
+    width: 45px;
+    height: 35px;
+    padding-top: 5px;
+}
+.addpost_fa-arrow-left{
+    margin: 10px 20px;
+    font-size: 25px;
+    font-weight: 100;
+}
+/* end */
+.addPost_h1{
+    font-size: 22px;
+}
+.add_descriptions_div{
+    border: 1px solid gray;
+}
